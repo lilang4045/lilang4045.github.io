@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 웹 문서의 문자 인코딩을 UTF-8로 설정하여 한글 깨짐을 방지합니다. -->
+    <meta charset="UTF-8">
+    <!-- 브라우저 탭에 표시될 웹 페이지의 제목(프로필)입니다. -->
+    <title>Profile</title>
+    
+    <style>
+        /* 웹 페이지 전체의 배경색을 연한 회색(#f5f5f5)으로 설정합니다. */
+        body {
+            background: #f5f5f5;
+        }
+        
+        /* 네비게이션 메뉴바의 배경색을 파란색 계열(rgb)로 설정합니다. */
+        #menubar { 
+            background : rgb(52, 140, 175); 
+        }
+        
+        /* 메뉴바 내부의 ul(목록형 레이아웃) 태그 스타일 설정 */
+        #menubar ul { 
+            margin : 0; 
+            padding : 0; 
+            width : 567px; /* 따옴표(" ")를 제거하여 올바른 CSS 문법 단위로 수정했습니다. */
+        }
+        
+        /* 메뉴 항목(li)들을 가로로 나열하고 좌우 여백을 설정합니다. */
+        #menubar ul li {
+            display: inline-block;    /* 세로로 나열되는 리스트를 가로로 배치합니다. */
+            list-style-type: none;    /* 리스트 항목 앞의 기본 점(불릿)을 제거합니다. */
+            padding: 0px 15px;        /* 위아래 여백 없이, 좌우에 15px씩 안쪽 여백을 줍니다. */
+        }
+        
+        /* 메뉴 링크(a)의 글자 색상을 흰색으로 지정하고 하단 밑줄을 제거합니다. */
+        #menubar ul li a { 
+            color : white; 
+            text-decoration: none; 
+        }
+        
+        /* 메뉴 링크에 마우스를 올렸을 때(hover 상태) 글자 색상을 보라색(violet)으로 바꿉니다. */
+        #menubar ul li a:hover { 
+            color : violet; 
+        }
+        
+        /* 웹 페이지 내의 모든 문단(p 태그)에 사방으로 10px의 안쪽 여백을 줍니다. */
+        p {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 페이지의 가장 큰 상단 제목입니다. -->
+    <h1>Profile</h1>
+    
+    <!-- 네비게이션 메뉴 영역으로, 다른 페이지로 갈 수 있는 링크 모음입니다. -->
+    <nav id="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="playlist.html">Playlist 🎶</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+    
+    <!-- 영역 구분을 위한 가로선입니다. -->
+    <hr>
+    
+    <!-- 기본 정보 섹션의 제목입니다. -->
+    <h2>기본정보</h2>
+    <!-- 은성님의 상세 인적 사항을 안내하는 문단입니다. -->
+    <p>
+        이름 : 노은성<br> <!-- <br> 태그로 줄바꿈을 처리했습니다. -->
+        소속 : 원주고등학교<br>
+        생년월일 : 2009년 4월 5일<br>
+        주거지 : 원주시 반곡동
+    </p>
+    <hr>
+    
+    <!-- 취미 섹션의 제목입니다. -->
+    <h2>취미</h2>
+    <!-- 이모지를 활용해 취미를 나열한 문단입니다. -->
+    <p>
+        게임 🎮<br>
+        축구 ⚽️<br>
+    </p>
+    
+    <!-- 하단 카피라이트 영역입니다. <small> 태그를 써서 글씨 크기를 작게 줄였습니다. -->
+    <p><small>(C) 2026 Noh Eunseong. All rights reserved.</small></p>
+</body>
+</html>
